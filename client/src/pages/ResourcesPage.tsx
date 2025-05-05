@@ -40,35 +40,7 @@ export default function ResourcesPage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Book 1 */}
-              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                <div className="flex justify-center bg-primary/5 p-6">
-                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">Por Que Os Homens Fazem Sexo e As Mulheres Fazem Amor?</h3>
-                  <p className="text-sm text-muted-foreground mb-2">Barbara e Allan Pease</p>
-                  <p className="text-sm text-foreground/80 mb-4">
-                    Uma análise das diferentes perspectivas masculinas e femininas nos relacionamentos, 
-                    ajudando a entender melhor os conflitos de comunicação e expectativas.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
-                      Relacionamentos
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
-                      Comunicação
-                    </span>
-                  </div>
-                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
-                    <span>Ver na Amazon</span>
-                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
-                  </a>
-                </div>
-              </div>
+
               
               {/* Book 2 */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
