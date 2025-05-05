@@ -42,12 +42,15 @@ export default function ResourcesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
               
-              {/* Book 2 */}
+              {/* Book - Mulheres que Amam Demais */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/71qjtL2xuVL._SY522_.jpg" 
+                      alt="Capa do livro Mulheres que Amam Demais" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -75,12 +78,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 3 */}
+              {/* Book - A Coragem de Ser Imperfeito */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/81AmZgHnFOL._SL1500_.jpg" 
+                      alt="Capa do livro A Coragem de Ser Imperfeito" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -105,12 +111,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 4 - Mulheres que Correm com os Lobos */}
+              {/* Book - Mulheres que Correm com os Lobos */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/71KL3LZ1hbL._SL1000_.jpg" 
+                      alt="Capa do livro Mulheres que Correm com os Lobos" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -135,12 +144,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 5 - O Corpo Guarda as Marcas */}
+              {/* Book - O Corpo Guarda as Marcas */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/61Qpp8Y9rUL._SL1000_.jpg" 
+                      alt="Capa do livro O Corpo Guarda as Marcas" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -168,12 +180,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 6 - Não Era Amor */}
+              {/* Book - Não Era Amor */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/71QfXWrDTvL._SL1500_.jpg" 
+                      alt="Capa do livro Não Era Amor" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -201,12 +216,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 7 - O Perigo de Uma História Única */}
+              {/* Book - O Perigo de Uma História Única */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/71UJZCuVwQL._SL1000_.jpg" 
+                      alt="Capa do livro O Perigo de Uma História Única" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -231,12 +249,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 8 - O Poder do Não */}
+              {/* Book - O Poder do Não */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/61Lxh4nI6dL._SL1050_.jpg" 
+                      alt="Capa do livro O Poder do Não" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -264,12 +285,15 @@ export default function ResourcesPage() {
                 </div>
               </div>
               
-              {/* Book 9 - Sobrevivi... posso contar */}
+              {/* Book - Sobrevivi... posso contar */}
               <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center bg-primary/5 p-6">
                   <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
-                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                    <img 
+                      src="https://m.media-amazon.com/images/I/51MJJAOqpaL._SL1000_.jpg" 
+                      alt="Capa do livro Sobrevivi... posso contar" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="p-5">
@@ -408,20 +432,21 @@ export default function ResourcesPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Video 1 */}
                 <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                  <div className="flex">
-                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
-                      <div className="text-center">
-                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
-                        Dependência Emocional: Como Superar?
-                      </h3>
-                      <p className="text-xs text-muted-foreground">Psicóloga Cláudia Lins</p>
-                    </div>
+                  <div className="aspect-video">
+                    <iframe 
+                      className="w-full h-full" 
+                      src="https://www.youtube.com/embed/Cc_Vb8xe7dM" 
+                      title="Dependência Emocional: Como Superar?" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <div className="p-4 pt-0">
+                  <div className="p-4">
+                    <h3 className="font-display font-semibold text-base text-primary-dark mb-1">
+                      Dependência Emocional: Como Superar?
+                    </h3>
+                    <p className="text-xs text-muted-foreground mb-2">Psicóloga Cláudia Lins</p>
                     <p className="text-sm text-foreground/80 mb-4">
                       Uma análise sobre os sinais de dependência emocional e estratégias práticas 
                       para desenvolver autonomia e construir relacionamentos mais saudáveis.
@@ -437,7 +462,7 @@ export default function ResourcesPage() {
                         Autoajuda
                       </span>
                     </div>
-                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <a href="https://www.youtube.com/watch?v=Cc_Vb8xe7dM" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                       <span>Assistir no YouTube</span>
                       <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
                     </a>
