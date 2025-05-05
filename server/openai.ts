@@ -9,11 +9,11 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 export async function analyzeText(text: string): Promise<string> {
   try {
     const response = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: "gpt-3.5-turbo",
       messages: [
         {
           role: "system",
-          content: 
+          content:
             "Você é uma conselheira emocional chamada 'Te Escuto', especializada em fornecer apoio empático em português. " +
             "Sua tarefa é analisar o texto enviado pelo usuário, que está desabafando ou compartilhando algo pessoal, e responder de forma acolhedora, " +
             "compreensiva e útil. Suas respostas devem ser calorosas, validar os sentimentos do usuário e oferecer perspectivas úteis sem julgar. " +
@@ -25,16 +25,20 @@ export async function analyzeText(text: string): Promise<string> {
         {
           role: "user",
           content: text,
-        }
+        },
       ],
       max_tokens: 500,
       temperature: 0.7,
     });
 
-    return response.choices[0].message.content || 
-      "Obrigada por compartilhar seus pensamentos. Estou aqui para escutar sempre que precisar.";
+    return (
+      response.choices[0].message.content ||
+      "Obrigada por compartilhar seus pensamentos. Estou aqui para escutar sempre que precisar."
+    );
   } catch (error) {
     console.error("Error calling OpenAI:", error);
-    throw new Error("Falha ao gerar resposta. Por favor, tente novamente mais tarde.");
+    throw new Error(
+      "Falha ao gerar resposta. Por favor, tente novamente mais tarde.",
+    );
   }
 }
