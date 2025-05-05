@@ -471,20 +471,21 @@ export default function ResourcesPage() {
                 
                 {/* Video 2 */}
                 <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                  <div className="flex">
-                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
-                      <div className="text-center">
-                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
-                        O Poder da Vulnerabilidade
-                      </h3>
-                      <p className="text-xs text-muted-foreground">Brené Brown (Legendado)</p>
-                    </div>
+                  <div className="aspect-video">
+                    <iframe 
+                      className="w-full h-full" 
+                      src="https://www.youtube.com/embed/Bmr4-fj8_7E" 
+                      title="O Poder da Vulnerabilidade" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <div className="p-4 pt-0">
+                  <div className="p-4">
+                    <h3 className="font-display font-semibold text-base text-primary-dark mb-1">
+                      O Poder da Vulnerabilidade
+                    </h3>
+                    <p className="text-xs text-muted-foreground mb-2">Brené Brown (Legendado)</p>
                     <p className="text-sm text-foreground/80 mb-4">
                       Nesta palestra inspiradora, Brené Brown explora como a vulnerabilidade 
                       é essencial para conexões autênticas e como podemos abraçar nossas imperfeições.
@@ -500,7 +501,7 @@ export default function ResourcesPage() {
                         Conexão
                       </span>
                     </div>
-                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <a href="https://www.youtube.com/watch?v=Bmr4-fj8_7E" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                       <span>Assistir no YouTube</span>
                       <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
                     </a>
@@ -509,20 +510,21 @@ export default function ResourcesPage() {
                 
                 {/* Video 3 */}
                 <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                  <div className="flex">
-                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
-                      <div className="text-center">
-                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
-                        Como Reconstruir a Autoestima
-                      </h3>
-                      <p className="text-xs text-muted-foreground">Canal Psicologia Viva</p>
-                    </div>
+                  <div className="aspect-video">
+                    <iframe 
+                      className="w-full h-full" 
+                      src="https://www.youtube.com/embed/YkDh7LTRrIM" 
+                      title="Como Reconstruir a Autoestima" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <div className="p-4 pt-0">
+                  <div className="p-4">
+                    <h3 className="font-display font-semibold text-base text-primary-dark mb-1">
+                      Como Reconstruir a Autoestima
+                    </h3>
+                    <p className="text-xs text-muted-foreground mb-2">Canal Psicologia Viva</p>
                     <p className="text-sm text-foreground/80 mb-4">
                       Este vídeo oferece orientações práticas sobre o processo de recuperação 
                       emocional e reconstrução da autoestima após experiências traumáticas em relacionamentos.
@@ -538,7 +540,7 @@ export default function ResourcesPage() {
                         Trauma
                       </span>
                     </div>
-                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <a href="https://www.youtube.com/watch?v=YkDh7LTRrIM" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                       <span>Assistir no YouTube</span>
                       <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
                     </a>
@@ -547,20 +549,21 @@ export default function ResourcesPage() {
                 
                 {/* Video 4 */}
                 <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                  <div className="flex">
-                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
-                      <div className="text-center">
-                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
-                        Relacionamentos Saudáveis: Identifique os Sinais
-                      </h3>
-                      <p className="text-xs text-muted-foreground">Psicóloga Ana Beatriz Barbosa</p>
-                    </div>
+                  <div className="aspect-video">
+                    <iframe 
+                      className="w-full h-full" 
+                      src="https://www.youtube.com/embed/4uHXfOnYVXE" 
+                      title="Relacionamentos Saudáveis: Identifique os Sinais" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <div className="p-4 pt-0">
+                  <div className="p-4">
+                    <h3 className="font-display font-semibold text-base text-primary-dark mb-1">
+                      Relacionamentos Saudáveis: Identifique os Sinais
+                    </h3>
+                    <p className="text-xs text-muted-foreground mb-2">Psicóloga Ana Beatriz Barbosa</p>
                     <p className="text-sm text-foreground/80 mb-4">
                       Um guia sobre como identificar sinais de relacionamentos saudáveis 
                       e como nutrir conexões baseadas em respeito mútuo e comunicação efetiva.
@@ -576,7 +579,7 @@ export default function ResourcesPage() {
                         Respeito
                       </span>
                     </div>
-                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <a href="https://www.youtube.com/watch?v=4uHXfOnYVXE" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                       <span>Assistir no YouTube</span>
                       <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
                     </a>
