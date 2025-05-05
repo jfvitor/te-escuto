@@ -166,7 +166,9 @@ const TextAnalyzer = () => {
             <div 
               ref={responseRef} 
               className="text-foreground whitespace-pre-wrap prose prose-sm max-w-none"
-            ></div>
+            >
+              {analysisResult}
+            </div>
           </div>
         )}
       </div>
