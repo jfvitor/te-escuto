@@ -44,9 +44,15 @@ const TextAnalyzer = () => {
     // Reset error state
     setError(null);
 
-    // Validate input
+    // Validate input - minimum 3 characters
     if (!userText.trim()) {
       setError("Por favor, escreva algo para enviar.");
+      return;
+    }
+    
+    // Check for minimum length of 3 characters
+    if (userText.trim().length < 3) {
+      setError("Por favor, escreva pelo menos 3 caracteres.");
       return;
     }
 
@@ -219,12 +225,16 @@ const TextAnalyzer = () => {
               }}
             />
             <div className="absolute bottom-2 right-3 text-muted-foreground text-xs opacity-70">
-              {userText.length > 0 && `${userText.length} caracteres`}
+              {userText.length > 0 && (
+                userText.trim().length < 3 
+                ? <span className="text-amber-500">{userText.length}/3 caracteres mínimos</span>
+                : `${userText.length} caracteres`
+              )}
             </div>
           </div>
           <button 
             type="submit"
-            disabled={isAnalyzing || !userText.trim()}
+            disabled={isAnalyzing || !userText.trim() || userText.trim().length < 3}
             className="px-4 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg shadow-sm transition-all duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed h-[44px]"
           >
             <FontAwesomeIcon icon={faPaperPlane} />
