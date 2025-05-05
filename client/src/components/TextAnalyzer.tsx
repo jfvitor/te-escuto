@@ -11,12 +11,18 @@ import {
   faExclamationCircle, 
   faCommentDots, 
   faSmile, 
-  faComments 
+  faComments,
+  faInfoCircle
 } from "@fortawesome/free-solid-svg-icons";
+
+// Limite máximo de mensagens por sessão
+const MENSAGENS_LIMITE = 10;
 
 const TextAnalyzer = () => {
   const [userText, setUserText] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [mensagensEnviadas, setMensagensEnviadas] = useState<number>(0);
+  const [limiteAtingido, setLimiteAtingido] = useState<boolean>(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   
@@ -25,9 +31,30 @@ const TextAnalyzer = () => {
     sendMessage,
     isAnalyzing,
     isTyping,
-    startNewConversation,
+    startNewConversation: clearConversation,
     error: apiError
   } = useTextAnalysis();
+  
+  // Wrapper para o método startNewConversation que mantém o contador de mensagens
+  const startNewConversation = () => {
+    clearConversation();
+    // O contador de mensagens continua o mesmo
+    // Uma nova conversa não significa um novo limite
+  };
+  
+  // Recuperar o contador de mensagens do sessionStorage ao carregar o componente
+  useEffect(() => {
+    const mensagensArmazenadas = sessionStorage.getItem("mensagensEnviadas");
+    if (mensagensArmazenadas) {
+      const contadorMensagens = parseInt(mensagensArmazenadas, 10);
+      setMensagensEnviadas(contadorMensagens);
+      
+      // Verificar se o limite já foi atingido
+      if (contadorMensagens >= MENSAGENS_LIMITE) {
+        setLimiteAtingido(true);
+      }
+    }
+  }, []);
 
   // Scroll to bottom whenever messages change
   useEffect(() => {
@@ -44,6 +71,12 @@ const TextAnalyzer = () => {
     // Reset error state
     setError(null);
 
+    // Verificar se o limite de mensagens foi atingido
+    if (limiteAtingido) {
+      setError("Você atingiu o limite de mensagens para esta sessão. Por favor, volte mais tarde.");
+      return;
+    }
+
     // Validate input - minimum 3 characters
     if (!userText.trim()) {
       setError("Por favor, escreva algo para enviar.");
@@ -58,12 +91,28 @@ const TextAnalyzer = () => {
 
     try {
       await sendMessage(userText);
+      
+      // Atualizar o contador de mensagens enviadas
+      const novoContador = mensagensEnviadas + 1;
+      setMensagensEnviadas(novoContador);
+      
+      // Armazenar o contador no sessionStorage
+      sessionStorage.setItem("mensagensEnviadas", novoContador.toString());
+      
+      // Verificar se atingiu o limite
+      if (novoContador >= MENSAGENS_LIMITE) {
+        setLimiteAtingido(true);
+      }
+      
       // Clear input after sending
       setUserText("");
-      // Focus the input for next message
-      setTimeout(() => {
-        inputRef.current?.focus();
-      }, 100);
+      
+      // Focus the input for next message (a menos que o limite tenha sido atingido)
+      if (novoContador < MENSAGENS_LIMITE) {
+        setTimeout(() => {
+          inputRef.current?.focus();
+        }, 100);
+      }
     } catch (err) {
       setError("Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.");
     }
@@ -205,6 +254,25 @@ const TextAnalyzer = () => {
         <div ref={messagesEndRef} />
       </div>
 
+      {/* Aviso de limite atingido */}
+      {limiteAtingido && (
+        <div className="border-t border-secondary bg-secondary/10 p-4">
+          <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <FontAwesomeIcon icon={faInfoCircle} className="text-amber-400" />
+              </div>
+              <div className="ml-3">
+                <p className="text-sm text-amber-700 font-medium">Limite de mensagens atingido</p>
+                <p className="text-sm text-amber-700 mt-1">
+                  Você já enviou {MENSAGENS_LIMITE} mensagens nesta sessão. Para garantir a qualidade do atendimento e manter o projeto gratuito, limitamos o número de interações por vez. Se precisar continuar, volte mais tarde. Estaremos aqui pra você. 💜
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Input Area */}
       <div className="border-t border-secondary p-3 bg-white">
         <form onSubmit={handleSubmit} className="flex items-end space-x-2">
@@ -213,19 +281,24 @@ const TextAnalyzer = () => {
               ref={inputRef}
               value={userText}
               onChange={handleTextareaChange}
-              placeholder="Escreva sua mensagem..."
+              placeholder={limiteAtingido ? "Limite de mensagens atingido..." : "Escreva sua mensagem..."}
               rows={1}
-              className="w-full px-4 py-3 border border-secondary rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all duration-200 text-foreground resize-none max-h-[150px] min-h-[44px]"
+              disabled={limiteAtingido}
+              className={`w-full px-4 py-3 border rounded-lg outline-none transition-all duration-200 resize-none max-h-[150px] min-h-[44px] ${
+                limiteAtingido 
+                ? "bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed" 
+                : "border-secondary focus:ring-2 focus:ring-primary focus:border-primary text-foreground"
+              }`}
               onKeyDown={(e) => {
                 // Submit on Enter without Shift
-                if (e.key === 'Enter' && !e.shiftKey) {
+                if (!limiteAtingido && e.key === 'Enter' && !e.shiftKey) {
                   e.preventDefault();
                   handleSubmit(e);
                 }
               }}
             />
             <div className="absolute bottom-2 right-3 text-muted-foreground text-xs opacity-70">
-              {userText.length > 0 && (
+              {!limiteAtingido && userText.length > 0 && (
                 userText.trim().length < 3 
                 ? <span className="text-amber-500">{userText.length}/3 caracteres mínimos</span>
                 : `${userText.length} caracteres`
@@ -234,7 +307,7 @@ const TextAnalyzer = () => {
           </div>
           <button 
             type="submit"
-            disabled={isAnalyzing || !userText.trim() || userText.trim().length < 3}
+            disabled={limiteAtingido || isAnalyzing || !userText.trim() || userText.trim().length < 3}
             className="px-4 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg shadow-sm transition-all duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed h-[44px]"
           >
             <FontAwesomeIcon icon={faPaperPlane} />
@@ -242,8 +315,17 @@ const TextAnalyzer = () => {
         </form>
         <div className="flex justify-center mt-2">
           <div className="text-xs text-muted-foreground">
-            <FontAwesomeIcon icon={faCommentDots} className="text-primary mr-1" />
-            Um espaço seguro para compartilhar seus sentimentos
+            {!limiteAtingido ? (
+              <>
+                <FontAwesomeIcon icon={faCommentDots} className="text-primary mr-1" />
+                Um espaço seguro para compartilhar seus sentimentos
+              </>
+            ) : (
+              <>
+                <FontAwesomeIcon icon={faInfoCircle} className="text-primary mr-1" />
+                Volte mais tarde para continuar nossa conversa
+              </>
+            )}
           </div>
         </div>
       </div>
