@@ -55,6 +55,14 @@ export default function ResourcesPage() {
                     Uma análise das diferentes perspectivas masculinas e femininas nos relacionamentos, 
                     ajudando a entender melhor os conflitos de comunicação e expectativas.
                   </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Relacionamentos
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Comunicação
+                    </span>
+                  </div>
                   <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                     <span>Ver na Amazon</span>
                     <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
@@ -77,6 +85,17 @@ export default function ResourcesPage() {
                     Um livro fundamental para mulheres que se encontram presas em padrões de relacionamentos 
                     destrutivos, mostrando caminhos para recuperação e autoconhecimento.
                   </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Relacionamentos
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Autoajuda
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Limites
+                    </span>
+                  </div>
                   <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                     <span>Ver na Amazon</span>
                     <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
@@ -99,6 +118,206 @@ export default function ResourcesPage() {
                     Uma exploração sobre vulnerabilidade, vergonha e a importância de aceitar 
                     nossas imperfeições para construir relacionamentos mais autênticos e significativos.
                   </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Autoestima
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Autoconhecimento
+                    </span>
+                  </div>
+                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <span>Ver na Amazon</span>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                  </a>
+                </div>
+              </div>
+              
+              {/* Book 4 - Mulheres que Correm com os Lobos */}
+              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center bg-primary/5 p-6">
+                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
+                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">Mulheres que Correm com os Lobos</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Clarissa Pinkola Estés</p>
+                  <p className="text-sm text-foreground/80 mb-4">
+                    Um mergulho profundo no arquétipo da mulher selvagem através de mitos e histórias ancestrais, 
+                    ajudando mulheres a reconectarem-se com sua essência criativa, intuitiva e poderosa.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Autoconhecimento
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Empoderamento
+                    </span>
+                  </div>
+                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <span>Ver na Amazon</span>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                  </a>
+                </div>
+              </div>
+              
+              {/* Book 5 - O Corpo Guarda as Marcas */}
+              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center bg-primary/5 p-6">
+                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
+                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">O Corpo Guarda as Marcas</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Bessel van der Kolk</p>
+                  <p className="text-sm text-foreground/80 mb-4">
+                    Uma exploração sobre como o trauma afeta o corpo e a mente, oferecendo caminhos 
+                    terapêuticos para curar feridas emocionais profundas e reconectar-se com o corpo.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Trauma
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Cura
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Autoconhecimento
+                    </span>
+                  </div>
+                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <span>Ver na Amazon</span>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                  </a>
+                </div>
+              </div>
+              
+              {/* Book 6 - Não Era Amor */}
+              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center bg-primary/5 p-6">
+                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
+                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">Não Era Amor</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Coletivo de psicólogas brasileiras</p>
+                  <p className="text-sm text-foreground/80 mb-4">
+                    Uma coletânea de relatos e análises sobre relacionamentos abusivos no contexto brasileiro, 
+                    ajudando mulheres a identificarem sinais de alerta e encontrarem caminhos para a liberdade.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Relacionamentos
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Abuso
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Empoderamento
+                    </span>
+                  </div>
+                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <span>Ver na Amazon</span>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                  </a>
+                </div>
+              </div>
+              
+              {/* Book 7 - O Perigo de Uma História Única */}
+              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center bg-primary/5 p-6">
+                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
+                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">O Perigo de Uma História Única</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Chimamanda Ngozi Adichie</p>
+                  <p className="text-sm text-foreground/80 mb-4">
+                    Uma reflexão sobre como estereótipos e narrativas simplificadas moldam nossas 
+                    percepções, e como ampliar nosso entendimento através da diversidade de histórias.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Perspectivas
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Diversidade
+                    </span>
+                  </div>
+                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <span>Ver na Amazon</span>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                  </a>
+                </div>
+              </div>
+              
+              {/* Book 8 - O Poder do Não */}
+              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center bg-primary/5 p-6">
+                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
+                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">O Poder do Não</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Damon Zahariades</p>
+                  <p className="text-sm text-foreground/80 mb-4">
+                    Um guia prático para estabelecer limites saudáveis, aprender a recusar 
+                    pedidos inconvenientes e priorizar o próprio bem-estar sem sentir culpa.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Limites
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Autoajuda
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Confiança
+                    </span>
+                  </div>
+                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                    <span>Ver na Amazon</span>
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                  </a>
+                </div>
+              </div>
+              
+              {/* Book 9 - Sobrevivi... posso contar */}
+              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center bg-primary/5 p-6">
+                  <div className="w-32 h-48 bg-white shadow-md rounded-md flex items-center justify-center overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
+                    <FontAwesomeIcon icon={faBook} className="text-4xl text-primary/30" />
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">Sobrevivi... posso contar</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Clara Averbuck</p>
+                  <p className="text-sm text-foreground/80 mb-4">
+                    Uma obra autobiográfica que relata experiências pessoais de violência e 
+                    abuso, mostrando como é possível sobreviver, reconhecer e compartilhar histórias difíceis.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Trauma
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Violência
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      Superação
+                    </span>
+                  </div>
                   <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                     <span>Ver na Amazon</span>
                     <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
@@ -128,6 +347,17 @@ export default function ResourcesPage() {
                   podem indicar um relacionamento prejudicial. São discutidas também estratégias 
                   para buscar ajuda e recursos de apoio disponíveis para vítimas.
                 </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Relacionamentos
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Abuso
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Sinais de alerta
+                  </span>
+                </div>
                 <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                   <span>Ler artigo</span>
                   <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
@@ -146,6 +376,17 @@ export default function ResourcesPage() {
                   Este artigo explica o conceito, exemplifica situações comuns e oferece orientações 
                   sobre como reconhecer este comportamento e proteger-se.
                 </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Abuso psicológico
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Manipulação
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Autodefesa
+                  </span>
+                </div>
                 <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                   <span>Ler artigo</span>
                   <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
@@ -164,6 +405,17 @@ export default function ResourcesPage() {
                   como comunicá-los assertivamente e como respeitar os limites dos outros, 
                   criando um ambiente de respeito mútuo e compreensão.
                 </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Limites
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Comunicação
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                    Respeito
+                  </span>
+                </div>
                 <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
                   <span>Ler artigo</span>
                   <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
@@ -180,75 +432,158 @@ export default function ResourcesPage() {
             </div>
             
             <div className="space-y-8">
-              {/* Video 1 */}
-              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                <div className="aspect-video bg-black/5 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <FontAwesomeIcon icon={faVideo} className="text-4xl text-primary/30 mb-4" />
-                    <p className="text-sm text-muted-foreground">Prévia do vídeo</p>
+              {/* Video cards with smaller previews */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Video 1 */}
+                <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                  <div className="flex">
+                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
+                      <div className="text-center">
+                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
+                        Dependência Emocional: Como Superar?
+                      </h3>
+                      <p className="text-xs text-muted-foreground">Psicóloga Cláudia Lins</p>
+                    </div>
+                  </div>
+                  <div className="p-4 pt-0">
+                    <p className="text-sm text-foreground/80 mb-4">
+                      Uma análise sobre os sinais de dependência emocional e estratégias práticas 
+                      para desenvolver autonomia e construir relacionamentos mais saudáveis.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Dependência
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Autonomia
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Autoajuda
+                      </span>
+                    </div>
+                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                      <span>Assistir no YouTube</span>
+                      <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                    </a>
                   </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">
-                    Dependência Emocional: Como Superar?
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-2">Psicóloga Cláudia Lins</p>
-                  <p className="text-sm text-foreground/80 mb-4">
-                    Uma análise sobre os sinais de dependência emocional e estratégias práticas 
-                    para desenvolver autonomia e construir relacionamentos mais saudáveis.
-                  </p>
-                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
-                    <span>Assistir no YouTube</span>
-                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
-                  </a>
-                </div>
-              </div>
-              
-              {/* Video 2 */}
-              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                <div className="aspect-video bg-black/5 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <FontAwesomeIcon icon={faVideo} className="text-4xl text-primary/30 mb-4" />
-                    <p className="text-sm text-muted-foreground">Prévia do vídeo</p>
+                
+                {/* Video 2 */}
+                <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                  <div className="flex">
+                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
+                      <div className="text-center">
+                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
+                        O Poder da Vulnerabilidade
+                      </h3>
+                      <p className="text-xs text-muted-foreground">Brené Brown (Legendado)</p>
+                    </div>
+                  </div>
+                  <div className="p-4 pt-0">
+                    <p className="text-sm text-foreground/80 mb-4">
+                      Nesta palestra inspiradora, Brené Brown explora como a vulnerabilidade 
+                      é essencial para conexões autênticas e como podemos abraçar nossas imperfeições.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Vulnerabilidade
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Autoconhecimento
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Conexão
+                      </span>
+                    </div>
+                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                      <span>Assistir no YouTube</span>
+                      <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                    </a>
                   </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">
-                    O Poder da Vulnerabilidade
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-2">Brené Brown (Legendado)</p>
-                  <p className="text-sm text-foreground/80 mb-4">
-                    Nesta palestra inspiradora, Brené Brown explora como a vulnerabilidade 
-                    é essencial para conexões autênticas e como podemos abraçar nossas imperfeições.
-                  </p>
-                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
-                    <span>Assistir no YouTube</span>
-                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
-                  </a>
-                </div>
-              </div>
-              
-              {/* Video 3 */}
-              <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
-                <div className="aspect-video bg-black/5 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <FontAwesomeIcon icon={faVideo} className="text-4xl text-primary/30 mb-4" />
-                    <p className="text-sm text-muted-foreground">Prévia do vídeo</p>
+                
+                {/* Video 3 */}
+                <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                  <div className="flex">
+                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
+                      <div className="text-center">
+                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
+                        Como Reconstruir a Autoestima
+                      </h3>
+                      <p className="text-xs text-muted-foreground">Canal Psicologia Viva</p>
+                    </div>
+                  </div>
+                  <div className="p-4 pt-0">
+                    <p className="text-sm text-foreground/80 mb-4">
+                      Este vídeo oferece orientações práticas sobre o processo de recuperação 
+                      emocional e reconstrução da autoestima após experiências traumáticas em relacionamentos.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Autoestima
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Recuperação
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Trauma
+                      </span>
+                    </div>
+                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                      <span>Assistir no YouTube</span>
+                      <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                    </a>
                   </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-display font-semibold text-lg text-primary-dark mb-1">
-                    Como Reconstruir a Autoestima Após um Relacionamento Abusivo
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-2">Canal Psicologia Viva</p>
-                  <p className="text-sm text-foreground/80 mb-4">
-                    Este vídeo oferece orientações práticas sobre o processo de recuperação 
-                    emocional e reconstrução da autoestima após experiências traumáticas em relacionamentos.
-                  </p>
-                  <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
-                    <span>Assistir no YouTube</span>
-                    <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
-                  </a>
+                
+                {/* Video 4 */}
+                <div className="bg-white rounded-xl shadow-sm border border-secondary/20 overflow-hidden hover:shadow-md transition-shadow duration-300">
+                  <div className="flex">
+                    <div className="w-36 h-24 bg-black/5 flex items-center justify-center flex-shrink-0">
+                      <div className="text-center">
+                        <FontAwesomeIcon icon={faVideo} className="text-2xl text-primary/30" />
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display font-semibold text-base text-primary-dark mb-1 line-clamp-1">
+                        Relacionamentos Saudáveis: Identifique os Sinais
+                      </h3>
+                      <p className="text-xs text-muted-foreground">Psicóloga Ana Beatriz Barbosa</p>
+                    </div>
+                  </div>
+                  <div className="p-4 pt-0">
+                    <p className="text-sm text-foreground/80 mb-4">
+                      Um guia sobre como identificar sinais de relacionamentos saudáveis 
+                      e como nutrir conexões baseadas em respeito mútuo e comunicação efetiva.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Relacionamentos
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Comunicação
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        Respeito
+                      </span>
+                    </div>
+                    <a href="#" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-dark transition-colors gap-1.5">
+                      <span>Assistir no YouTube</span>
+                      <FontAwesomeIcon icon={faExternalLinkAlt} className="text-xs" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -270,6 +605,15 @@ export default function ResourcesPage() {
         </div>
       </main>
 
+      {/* Ethical Note */}
+      <div className="bg-primary/5 py-6 px-4 border-y border-secondary/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm text-foreground/80 italic">
+            Alguns links aqui são afiliados. Isso significa que, se você decidir comprar, o Te Escuto pode receber uma pequena comissão — sem custo extra pra você. Isso nos ajuda a manter a plataforma gratuita, ética e segura. 💜
+          </p>
+        </div>
+      </div>
+      
       {/* Footer */}
       <footer className="bg-white py-8 px-4 border-t border-secondary/10">
         <div className="max-w-6xl mx-auto text-center">
