@@ -27,7 +27,7 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faComments} className="text-sm" />
             <span>Conversar agora</span>
           </Link>
-          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors font-medium text-sm flex items-center gap-1.5">
+          <Link href="/recursos" className={`text-muted-foreground hover:text-primary transition-colors font-medium text-sm flex items-center gap-1.5 ${location === '/recursos' ? 'text-primary' : ''}`}>
             <FontAwesomeIcon icon={faBookOpen} className="text-sm" />
             <span>Leituras recomendadas</span>
           </Link>
