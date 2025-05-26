@@ -8,21 +8,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/analyze", async (req, res) => {
     try {
       const { text } = req.body;
-      
+
       if (!text || typeof text !== "string" || text.trim() === "") {
-        return res.status(400).json({ 
-          message: "Por favor, forneça um texto válido para análise." 
+        return res.status(400).json({
+          message: "Por favor, forneça um texto válido para análise.",
         });
       }
 
       // Generate AI response
       const response = await analyzeText(text);
-      
+
       // Store the analysis record if needed
       try {
         await storage.saveAnalysis({
           content: text,
-          response
+          response,
         });
       } catch (storageError) {
         console.error("Error saving analysis:", storageError);
@@ -32,8 +32,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       return res.status(200).json({ response });
     } catch (error) {
       console.error("Error analyzing text:", error);
-      return res.status(500).json({ 
-        message: "Ocorreu um erro ao analisar o texto. Por favor, tente novamente." 
+      return res.status(500).json({
+        message:
+          "Ocorreu um erro ao analisar o texto. Por favor, tente novamente.",
       });
     }
   });
